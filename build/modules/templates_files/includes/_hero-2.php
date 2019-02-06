@@ -10,8 +10,8 @@
 			</div>
 			<div class="col-xs-4 col-sm-5 col-md-4 ha-xs-center ha-sm-right">
 				<ul class="socialmedia">
-					<li><a href="#" class="icon-facebook"></a></li>
-					<li><a href="#" class="icon-linkedin"></a></li>
+					<li><a href="{{template.facebook-url}}" class="icon-facebook"></a></li>
+					<li><a href="{{template.linkedin-url}}" class="icon-linkedin"></a></li>
 				</ul>
 			</div>
 		</div>

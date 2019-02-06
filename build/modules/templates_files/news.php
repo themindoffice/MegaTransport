@@ -80,8 +80,8 @@
 			<div class="container">
 				<div class="row va-xs-center">
 					<div class="col-xs-12 col-md-8">
-						<h2>‘Ruimte voor een mooie quote van de eigenaar van Mega Transport.’</h2> - Arjan Kal</div>
-					<div class="col-xs-12 col-md-4 button alt2"> <a href="#">Neem contact op</a></div>
+						<h2>{{template.banner-2-title}}</h2> -{{template.banner-2-name}}</div>
+					<div class="col-xs-12 col-md-4 button alt2"> <a href="{{template.banner-2-button-url}}">Neem contact op</a></div>
 				</div>
 			</div>
 		</section>
@@ -91,10 +91,10 @@
 					<div class="col-xs-12 col-md-6 section-header order-xs-2 order-md-0"> <img src="files/content-img-1.jpg"></div>
 					<div class="col-xs-12 col-md-6">
 						<div class="content">
-							<h2>Contact</h2>{{page.contentgegevens-tekst[textarea]}}</div>
+							<h2>{{template.contactgegevens-title}}</h2>{{template.contactgegevens-tekst[textarea]}}</div>
 						<ul class="social">
-							<li><a href="#" class="icon-facebook"></a></li>
-							<li><a href="#" class="icon-linkedin"></a></li>
+							<li><a href="{{template.facebook-url}}" class="icon-facebook"></a></li>
+							<li><a href="{{template.linkedin-url}}" class="icon-linkedin"></a></li>
 						</ul>
 					</div>
 				</div>

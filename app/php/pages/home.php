@@ -20,7 +20,7 @@
 							</content>
 						</div>
 						<div class="button ta-xs-right">
-							<a href="#"><span>Lees verder</span></a>
+							<a href="content{page.intro-button-url, #}"><span>Lees verder</span></a>
 						</div>
 					</div>
 				</div>
@@ -31,9 +31,14 @@
 				<div class="row ha-xs-right va-xs-center">
 					<div class="col-xs-12 col-md-6">
 						<div class="box">
-							<div class="title">Mega <span>trailer</span></div>
+							<div class="title">
+								<content name="template.banner-1-titel-1">Mega</content>&nbsp;
+								<span><content name="template.banner-1-titel-2">trailer</content></span>
+							</div>
 							<div class="text">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+								<content name="template.banner-1-text[textarea]">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+								</content>
 							</div>
 						</div>
 					</div>
@@ -41,7 +46,7 @@
 			</div>
 			<div class="container fluid-xs">
 				<div class="row clear-gutter_h-xs">
-					<div class="col-xs-12 col-md-6 hidden-xs visible-md image cover" style="background-image:url(files/banner-1.jpg);"></div>
+					<div class="col-xs-12 col-md-6 hidden-xs visible-md image cover" style="background-image:url(content{template.banner-1-afbeelding, files/banner-1.jpg});"></div>
 					<div class="col-xs-12 col-md-6 background"></div>
 				</div>
 			</div>
@@ -50,8 +55,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 section-header">
-						<h3><content name="page.intro-titel-1">Laatste</content></h3>
-						<h4><content name="page.intro-titel-2">nieuws</content></h4>
+						<h3><content name="page.news-title-1">Laatste</content></h3>
+						<h4><content name="page.news-title-2">nieuws</content></h4>
 					</div>
 				</div>
 				<div class="row">
@@ -105,11 +110,11 @@
 			<div class="container">
 				<div class="row va-xs-center">
 					<div class="col-xs-12 col-md-8">
-						<h2>‘Ruimte voor een mooie quote van de eigenaar van Mega Transport.’</h2>
-						- Arjan Kal
+						<h2><content name="template.banner-2-title">‘Ruimte voor een mooie quote van de eigenaar van Mega Transport.’</content></h2>
+						- <content name="template.banner-2-name">Arjan Kal</content>
 					</div>
 					<div class="col-xs-12 col-md-4 button alt2">
-						<a href="#">Neem contact op</a>
+						<a href="content{template.banner-2-button-url, #}">Neem contact op</a>
 					</div>
 				</div>
 			</div>
@@ -122,8 +127,8 @@
 					</div>
 					<div class="col-xs-12 col-md-6">
 						<div class="content">
-							<h2>Contact</h2>
-							<content name="page.contentgegevens-tekst[textarea]">
+							<h2><content name="template.contactgegevens-title">Contact</content></h2>
+							<content name="template.contactgegevens-tekst[textarea]">
 								Produktiestraat 83<br>
 								3133 ES <br>
 								Vlaardingen
@@ -133,8 +138,8 @@
 							</content>
 						</div>
 						<ul class="social">
-							<li><a href="#" class="icon-facebook"></a></li>
-							<li><a href="#" class="icon-linkedin"></a></li>
+							<li><a href="content{template.facebook-url, #}" class="icon-facebook"></a></li>
+							<li><a href="content{template.linkedin-url, #}" class="icon-linkedin"></a></li>
 						</ul>
 					</div>
 				</div>

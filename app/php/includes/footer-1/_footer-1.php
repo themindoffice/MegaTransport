@@ -46,10 +46,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6 clear-gutter_b-xs reset-gutter_b-md">
-					<strong><content name="template.footer-bottom-1">© Mega Transport  B.V. 2018</content></strong>
+					<strong><content name="template.footer-bottom-text">© Mega Transport  B.V. 2018</content></strong>
 				</div>
 				<div class="col-xs-12 col-md-6 ta-md-right">
-					<content name="template.footer-bottom-2[textarea]">Creatie & realisatie <a href="https://themindoffice.nl/" target="_blank">The MindOffice</a></content>
+					Creatie & realisatie <a href="https://themindoffice.nl/" target="_blank">The MindOffice</a>
 				</div>
 				<a class="back-to-top" href="#" data-scrollto="top"></a>
 			</div>

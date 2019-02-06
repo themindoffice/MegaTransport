@@ -72,11 +72,11 @@
 			<div class="container">
 				<div class="row va-xs-center">
 					<div class="col-xs-12 col-md-8">
-						<h2>‘Ruimte voor een mooie quote van de eigenaar van Mega Transport.’</h2>
-						- Arjan Kal
+						<h2><content name="template.banner-2-title">‘Ruimte voor een mooie quote van de eigenaar van Mega Transport.’</content></h2>
+						- <content name="template.banner-2-name">Arjan Kal</content>
 					</div>
 					<div class="col-xs-12 col-md-4 button alt2">
-						<a href="#">Neem contact op</a>
+						<a href="content{template.banner-2-button-url, #}">Neem contact op</a>
 					</div>
 				</div>
 			</div>
@@ -89,8 +89,8 @@
 					</div>
 					<div class="col-xs-12 col-md-6">
 						<div class="content">
-							<h2>Contact</h2>
-							<content name="page.contentgegevens-tekst[textarea]">
+							<h2><content name="template.contactgegevens-title">Contact</content></h2>
+							<content name="template.contactgegevens-tekst[textarea]">
 								Produktiestraat 83<br>
 								3133 ES <br>
 								Vlaardingen
@@ -100,8 +100,8 @@
 							</content>
 						</div>
 						<ul class="social">
-							<li><a href="#" class="icon-facebook"></a></li>
-							<li><a href="#" class="icon-linkedin"></a></li>
+							<li><a href="content{template.facebook-url, #}" class="icon-facebook"></a></li>
+							<li><a href="content{template.linkedin-url, #}" class="icon-linkedin"></a></li>
 						</ul>
 					</div>
 				</div>

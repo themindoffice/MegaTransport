@@ -31,8 +31,8 @@
 	<section class="footer-bottom">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-6 clear-gutter_b-xs reset-gutter_b-md"><strong>{{template.footer-bottom-1}}</strong></div>
-				<div class="col-xs-12 col-md-6 ta-md-right">{{template.footer-bottom-2[textarea]}}</div><a class="back-to-top" href="#" data-scrollto="top"></a></div>
+				<div class="col-xs-12 col-md-6 clear-gutter_b-xs reset-gutter_b-md"><strong>{{template.footer-bottom-text}}</strong></div>
+				<div class="col-xs-12 col-md-6 ta-md-right"> Creatie & realisatie <a href="https://themindoffice.nl/" target="_blank">The MindOffice</a></div><a class="back-to-top" href="#" data-scrollto="top"></a></div>
 		</div>
 	</section>
 </footer>
