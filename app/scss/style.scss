@@ -1,0 +1,488 @@
+/* CORE SCSS ----------------------------------- */
+
+@import "_vars";
+@import "_mixins";
+@import "_reset";
+@import "_fonts";
+@import "_grid";
+@import "_ui";
+@import "_components";
+
+/* MAIN ----------------------------------------- */
+
+html,
+body {
+	background-color: #fff;
+	color: $grey-3;
+	@include responsive(font-size, 17px, .1);
+	font-family: $font-1;
+	line-height: 150%;
+}
+
+section {
+	position: relative;
+}
+
+main {
+	section {
+		@include responsive(padding-bottom, #{$section-padding}, .2);
+		@include responsive(padding-top, #{$section-padding}, .2);
+	}
+}
+
+#page {
+	min-width: 320px;
+	position: relative;
+	@include transition(transform, ease, 300ms);
+	z-index: 20;
+}
+
+/* CONTENT --------------------------------- */
+
+.section-header {
+	h1 {
+		color: $color-1;
+		font-family: $font-2;
+		@include responsive(font-size, 50px, .15);
+		font-weight: 500;
+		line-height:105%;
+	}
+	h2 {
+		color: $color-1;
+		font-family: $font-2;
+		@include responsive(font-size, 50px, .15);
+		font-weight: 500;
+		line-height:105%;
+	}
+	h3 {
+		color: $color-1;
+		font-family: $font-2;
+		@include responsive(font-size, 40px, .15);
+		font-weight: 500;
+		line-height:105%;
+	}
+	h4 {
+		color: $color-1;
+		font-family: $font-2;
+		@include responsive(font-size, 30px);
+		font-weight: 500;
+		line-height:105%;
+	}
+	h5 {
+		color: $color-1;
+		font-family: $font-2;
+		@include responsive(font-size, 20px);
+		font-weight: 500;
+		line-height: 120%;
+	}
+	h6 {
+		color: $color-1;
+		font-family: $font-2;
+		@include responsive(font-size, 20px);
+		font-weight: 500;
+		line-height: 120%;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		&:not(:last-child) {
+			margin-bottom: $text-margin;
+		}
+	}
+}
+
+.content {
+	h1 {
+		color: $color-1;
+		font-family: $font-2;
+		@include responsive(font-size, 35px, .15);
+		font-weight: 500;
+		line-height:105%;
+	}
+	h2 {
+		color: $color-1;
+		font-family: $font-2;
+		@include responsive(font-size, 30px, .15);
+		font-weight: 500;
+		line-height:105%;
+	}
+	h3 {
+		color: $color-1;
+		font-family: $font-2;
+		@include responsive(font-size, 25px, .15);
+		font-weight: 500;
+		line-height:105%;
+	}
+	h4 {
+		color: $color-1;
+		font-family: $font-2;
+		@include responsive(font-size, 20px);
+		font-weight: 500;
+		line-height:105%;
+	}
+	h5 {
+		color: $color-1;
+		font-family: $font-2;
+		@include responsive(font-size, 19px);
+		font-weight: 500;
+		line-height: 150%;
+	}
+	h6 {
+		color: $color-1;
+		font-family: $font-2;
+		@include responsive(font-size, 18px);
+		font-weight: 500;
+		line-height: 150%;
+	}
+
+	a {
+		color: $color-1;
+		text-decoration: underline;
+	}
+
+	ul {
+		display: table;
+		list-style: none;
+
+		li {
+			display: block;
+			text-indent: -14px;
+			padding-left: 14px;
+			position: relative;
+
+			&:before {
+				background-color: $grey-3;
+				@include border-radius(50%);
+				content: '';
+				height: 6px;
+				margin: -2px 7px 0 0;
+				display: inline-block;
+				vertical-align: middle;
+				width: 6px;
+			}
+		}
+	}
+
+	ol {
+		display: table;
+		margin-left: 12px;
+
+		@include medium {
+			margin-left: 14px;
+		}
+		@include large {
+			margin-left: 16px;
+		}
+		@include extralarge {
+			margin-left: 17px;
+		}
+	}
+
+	table {
+		tr {
+			th,
+			td {
+				padding: 4px 8px;
+
+				&:first-child {
+					padding-left: 0;
+				}
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+			th {
+				border-bottom: 1px solid $grey-1;
+				font-weight: bold;
+				text-align: left;
+			}
+		}
+	}
+
+	hr {
+		border: 0;
+		border-bottom: 4px solid $grey-1;
+		display: block;
+		height: 0;
+		margin-left: 0;
+		margin-right: auto;
+		margin-top: 0;
+		width: 100px;
+		padding: 0;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	ul,
+	ol,
+	table,
+	hr {
+		&:not(:last-child) {
+			margin-bottom: $text-margin;
+		}
+	}
+}
+
+/* CUSTOM ---------------------------------------------- */
+
+section.is-grey {
+	background-color: $grey-1;
+}
+
+/* GLOBAL CLASSES -------------------------------------- */
+
+.cover {
+	@include background('', cover, center, no-repeat);
+}
+
+.object-fill {
+	object-fit: fill;
+}
+.object-contain {
+	object-fit: contain;
+}
+.object-cover {
+	object-fit: cover;
+}
+.object-scale-down {
+	object-fit: scale-down;
+}
+.object-none {
+	object-fit: none;
+}
+
+.ta-xs-left {
+	text-align: left;
+
+	hr {
+		margin-left: 0;
+		margin-right: auto;
+	}
+}
+.ta-xs-right {
+	text-align: right;
+
+	ul,
+	ol,
+	table,
+	hr {
+		margin-left: auto;
+		margin-right: 0;
+	}
+}
+.ta-xs-center {
+	text-align: center;
+
+	ul,
+	ol,
+	table,
+	hr {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.ta-xs-justify {
+	text-align: justify;
+
+	ul,
+	ol,
+	table,
+	hr {
+		margin-left: 0;
+		margin-right: auto;
+	}
+}
+
+@include small {
+	.ta-sm-left {
+		text-align: left;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+	.ta-sm-right {
+		text-align: right;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+	.ta-sm-center {
+		text-align: center;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.ta-sm-justify {
+		text-align: justify;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+}
+@include medium {
+	.ta-md-left {
+		text-align: left;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+	.ta-md-right {
+		text-align: right;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+	.ta-md-center {
+		text-align: center;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.ta-md-justify {
+		text-align: justify;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+}
+@include large {
+	.ta-lg-left {
+		text-align: left;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+	.ta-lg-right {
+		text-align: right;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+	.ta-lg-center {
+		text-align: center;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.ta-lg-justify {
+		text-align: justify;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+}
+@include extralarge {
+	.ta-xl-left {
+		text-align: left;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+	.ta-xl-right {
+		text-align: right;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+	.ta-xl-center {
+		text-align: center;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.ta-xl-justify {
+		text-align: justify;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+}

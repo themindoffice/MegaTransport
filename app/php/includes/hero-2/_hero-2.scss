@@ -1,0 +1,98 @@
+section.hero-2 {
+	@include flex(row, nowrap, center, center);
+	@include responsive(height, 765px, .1);
+	padding: 30px;
+	position: relative;
+	z-index: 20;
+
+	.owl-carousel {
+		@include position(absolute, 0, 0, 0, 0);
+		z-index: 10;
+
+		.owl-stage-outer,
+		.owl-stage,
+		.owl-item,
+		.img {
+			height: 100%;
+		}
+
+		.owl-stage-outer {
+			z-index: 10;
+			
+			&:before {
+				background-color: rgba(#000, .3);
+				content: '';
+				@include position(absolute, 0, 0, 0, 0);
+				z-index: 20;
+			}
+		}
+
+		.owl-stage {
+			z-index: 10;
+		}
+
+		.owl-item > img {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			right: 0;
+			width: 100%;
+		}
+
+		.owl-dots {
+			@include flex(row, wrap, center, center);
+			height: 18px;
+			@include position(absolute, none, 30px, 40px, 30px);
+			z-index: 20;
+
+			.owl-dot {
+				border: 2px solid #fff;
+				@include border-radius(50%);
+				height: 18px;
+				margin: 4px;
+				@include transition;
+				width: 18px;
+
+				&.active {
+					background-color: #fff;
+				}
+			}
+		}
+	}
+
+	.box {
+		background-color: rgba(#000, 0);
+		@include border-radius;
+		max-width: 800px;
+		padding: 0;
+		position: relative;
+		text-align: center;
+		z-index: 20;
+
+		.title {
+			color: #fff;
+			font-family: $font-2;
+			@include responsive(font-size, 65px, .15);
+			font-weight: normal;
+			line-height: 105%;
+		}
+
+		.subtitle {
+			color: #fff;
+			font-family: $font-2;
+			@include responsive(font-size, 35px, .1);
+			font-weight: normal;
+			line-height: 120%;
+			margin-bottom: 40px;
+		}
+
+		.text {
+			color: #fff;
+			font-family: $font-2;
+			@include responsive(font-size, 17px, .1);
+			font-weight: 300;
+			line-height: 160%;
+			margin-bottom: 30px;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+section.hero-1 {
+	@include flex(row, nowrap, center, center);
+	@include responsive(height, 500px, .1);
+	padding: 30px;
+	position: relative;
+	z-index: 20;
+
+	.parallax {
+		z-index: 10;
+
+		&:before {
+			background-color: rgba(#000, .6);
+			content: '';
+			@include position(absolute, 0, 0, 0, 0);
+			z-index: 10;
+		}
+	}
+
+	.box {
+		background-color: rgba(#000, 0);
+		@include border-radius;
+		max-width: 800px;
+		padding: 0;
+		position: relative;
+		text-align: center;
+		z-index: 20;
+
+		> div:last-child {
+			margin-bottom: 0;
+		}
+
+		.title {
+			color: #fff;
+			font-family: $font-2;
+			@include responsive(font-size, 65px, .15);
+			font-weight: normal;
+			line-height: 105%;
+		}
+
+		.subtitle {
+			color: #fff;
+			font-family: $font-2;
+			@include responsive(font-size, 35px, .1);
+			font-weight: normal;
+			line-height: 120%;
+			margin-bottom: 40px;
+		}
+
+		.text {
+			color: #fff;
+			font-family: $font-2;
+			@include responsive(font-size, 17px, .1);
+			font-weight: 300;
+			line-height: 160%;
+			margin-bottom: 30px;
+		}
+	}
+}
