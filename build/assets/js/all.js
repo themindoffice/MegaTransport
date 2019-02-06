@@ -5762,27 +5762,14 @@ MobileMenu.prototype =
 	Init: function(options)
 	{
 		this.options = {
-			$header: 			"header",
-			$mobileMenu: 		"#mobile-menu",
-			$mobileMenuClose: 	"#mobile-menu .close",
-			$mobileMenuContent: "#mobile-menu #mobile-menu-content",
-			$mobileMenuTrigger: "#mobile-menu-trigger",
-			$mainMenu: 			"#main-menu"
+			$mobileMenu: "#mobile-menu",
+			$mobileMenuTrigger: "#mobile-menu-trigger"
 		};
 		
 		$.extend(this.options, options);
 
-		this.$body						= $("body");
-		this.$header					= $(this.options.$header);
-		this.$mobileMenu 				= $(this.options.$mobileMenu);
-		this.$mobileMenuClose 			= $(this.options.$mobileMenuClose);
-		this.$mobileMenuContent 		= $(this.options.$mobileMenuContent);
-		this.$mobileMenuTrigger 		= $(this.options.$mobileMenuTrigger);
-		this.$mainMenu					= $(this.options.$mainMenu);
-		this.$mobileMenuList			= $();
-		this.$mobileMenuListItems		= $();
-		this.$mobileMenuAnchors			= $();
-		this.$mobileMenuAnchorsSubs		= $();
+		this.$mobileMenu		= $(this.options.$mobileMenu);
+		this.$mobileMenuTrigger = $(this.options.$mobileMenuTrigger);
 		
 		this.Start();
 	},
@@ -5793,24 +5780,6 @@ MobileMenu.prototype =
 	 */
 	Start: function()
 	{
-		this.SetHTML();
-	},
-
-	/**
-	 * SetHTML
-	 * @return void
-	 */
-	SetHTML: function()
-	{
-		this.$mobileMenuContent.html(this.$mainMenu.html());
-
-		this.$mobileMenuList			= this.$mobileMenuContent.find("> ul");
-		this.$mobileMenuListItems		= this.$mobileMenuList.find("> li");
-		this.$mobileMenuAnchors			= this.$mobileMenuList.find("> li > a");
-		this.$mobileMenuAnchorsSubs		= this.$mobileMenuList.find("> li.subs > a");
-
-		this.$mobileMenuList.removeAttr("class");
-
 		this.SetEvents();
 	},
 
@@ -5825,27 +5794,7 @@ MobileMenu.prototype =
 		this.$mobileMenuTrigger.on("click touchstart", function(e) {
 			e.preventDefault();
 
-			_this.$body.addClass("mobile-menu-open");
-		});
-
-		this.$mobileMenuClose.on("click touchstart", function(e) {
-			e.preventDefault();
-
-			_this.$body.removeClass("mobile-menu-open");
-		});
-
-		this.$mobileMenuAnchorsSubs.on("click touchstart", function(e) {
-			var $parent 		= $(this).parent();
-			var $openListItems	= _this.$mobileMenuList.find("li.open");
-
-			if (!$parent.hasClass("open")) {
-				e.preventDefault();
-
-				$openListItems.find("> ul").slideUp(400);
-				$openListItems.removeClass("open");
-				$parent.find("> ul").slideDown(400);
-				$parent.addClass("open");
-			}
+			_this.$mobileMenu.toggleClass("open");
 		});
 	}
 };
@@ -6127,14 +6076,8 @@ Parallax.prototype =
 };
 $(document).ready(function()
 {
-	new StickyHeader();
 	new MobileMenu();
-	new NavSlider();
-	new Search();
-	new LanguageMenu();
 	new Transition();
-	new Accordion();
-	new Tabs();
 	new AnchorScroll();
 	new Form();
 
@@ -6148,10 +6091,6 @@ $(document).ready(function()
 		touchDrag: false,
 		pullDrag: false
 	});
-});
-
-$(window).on('load', function() {
-	new Parallax();
 });
 /**
  * Search

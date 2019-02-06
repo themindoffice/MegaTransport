@@ -1,12 +1,19 @@
 <section class="hero-2">
-	<div class="owl-carousel"> <img class="lazy object-cover" data-src="files/gallery-full-03.jpg"> <img class="lazy object-cover" data-src="files/banner-2.jpg"></div>
-	<div class="box">
-		<div class="title">{{page.hero-titel}}</div>
-		<div class="subtitle">{{page.hero-subtitel}}</div>
-		<div class="text">{{page.hero-tekst[textarea]}}</div>
-		<div class="buttons">
-			<div class="button"><a href="#">button</a></div>
-			<div class="button alt"><a href="#">button alt</a></div>
+	<div class="row background">
+		<div class="col-xs-8 col-sm-7 col-md-8 left"></div>
+		<div class="col-xs-4 col-sm-5 col-md-4 right"></div>
+	</div>
+	<div class="container text">
+		<div class="row va-xs-center">
+			<div class="col-xs-8 col-sm-7 col-md-8">
+				<div class="title">{{page.hero-titel}}</div>
+			</div>
+			<div class="col-xs-4 col-sm-5 col-md-4 ha-xs-center ha-sm-right">
+				<ul class="socialmedia">
+					<li><a href="#" class="icon-facebook"></a></li>
+					<li><a href="#" class="icon-linkedin"></a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>

@@ -1,13 +1,7 @@
 $(document).ready(function()
 {
-	new StickyHeader();
 	new MobileMenu();
-	new NavSlider();
-	new Search();
-	new LanguageMenu();
 	new Transition();
-	new Accordion();
-	new Tabs();
 	new AnchorScroll();
 	new Form();
 
@@ -21,8 +15,4 @@ $(document).ready(function()
 		touchDrag: false,
 		pullDrag: false
 	});
-});
-
-$(window).on('load', function() {
-	new Parallax();
 });

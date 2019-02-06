@@ -1,12 +1,12 @@
 /* COLOR PALETTE --------------------------------- */
 
-$color-1: #2eacb3; // blue
-$color-2: #6a6357; // Brown
+$color-1: #e3001b; // blue
+$color-2: #aeafb0; // Brown
 
 $grey-1: #f2f2f2; // Light grey
 $grey-2: #999999; // Medium grey
 $grey-3: #505050; // Dark grey
-$grey-4: #242424; // Almost black
+$grey-4: #1D1D1B; // Almost black
 
 $color-error: #f02a2a;
 $color-success: #20a623;
@@ -14,21 +14,20 @@ $color-success: #20a623;
 /* FONTS ------------------------------------------ */
 
 $font-1: 'Open Sans', sans-serif;
-$font-2: 'Quicksand', sans-serif;
+$font-2: eurostile, sans-serif;
 
 /* GRID ------------------------------------------ */
 
 $viewport-sm: 480px;
 $viewport-md: 786px;
 $viewport-lg: 992px;
-$viewport-xl: 1320px;
+$viewport-xl: 1120px;
 
 $gutter: 20px;
 
 /* VARIOUS ---------------------------------------- */
 
-$ui-radius: 5px;
-$button-radius: 5px;
-$section-padding: 70px;
-$section-card-padding: 70px;
+$ui-radius: 0;
+$button-radius: 0;
+$section-padding: 30px;
 $text-margin: 25px;

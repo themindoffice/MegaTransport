@@ -1,58 +1,70 @@
 section.hero-1 {
-	@include flex(row, nowrap, center, center);
-	@include responsive(height, 500px, .1);
-	padding: 30px;
+	overflow: hidden;
 	position: relative;
 	z-index: 20;
 
-	.parallax {
-		z-index: 10;
+	@include large {
+		margin-bottom: -60px;
+	}
+	@include extralarge {
+		margin-bottom: -100px;
+	}
 
-		&:before {
-			background-color: rgba(#000, .6);
-			content: '';
-			@include position(absolute, 0, 0, 0, 0);
+	.image {
+		margin: 0 -300px 0 -50px;
+		position: relative;
+
+		@include medium {
+			margin: 0;
+		}
+
+		img {
+			display: block;
+			height: auto;
+			position: relative;
+			width: 100%;
 			z-index: 10;
 		}
 	}
 
-	.box {
-		background-color: rgba(#000, 0);
-		@include border-radius;
-		max-width: 800px;
-		padding: 0;
-		position: relative;
-		text-align: center;
+	.overlay {
+		background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=1 ); /* IE6-9 */
+		right: 300px;
+		padding-bottom: 37.3125%;
+		position: absolute;
+		top: 0;
+		width: 100%;
 		z-index: 20;
 
-		> div:last-child {
-			margin-bottom: 0;
+		@include medium {
+			left: 0;
+			right: auto;
 		}
+	}
 
-		.title {
-			color: #fff;
-			font-family: $font-2;
-			@include responsive(font-size, 65px, .15);
-			font-weight: normal;
-			line-height: 105%;
-		}
+	.hero-text {
+		@include position(absolute, 0,0,16%,0);
+		z-index: 30;
 
-		.subtitle {
-			color: #fff;
-			font-family: $font-2;
-			@include responsive(font-size, 35px, .1);
-			font-weight: normal;
-			line-height: 120%;
-			margin-bottom: 40px;
-		}
+		.container {
+			height: 100%;
 
-		.text {
-			color: #fff;
-			font-family: $font-2;
-			@include responsive(font-size, 17px, .1);
-			font-weight: 300;
-			line-height: 160%;
-			margin-bottom: 30px;
+			.row {
+				height: 100%;
+			}
 		}
+	}
+
+	.title {
+		color: #fff;
+		font-family: $font-2;
+		font-style: normal;
+		font-weight: 700;
+		@include responsive(font-size, 60px, .18);
+		line-height: 120%;
+		margin-bottom: 28px;
 	}
 }

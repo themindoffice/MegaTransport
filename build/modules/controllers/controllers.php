@@ -1,8 +1,11 @@
 <?php
 
 function controllers_contact() {
-    $secret 	= '6Lc1S2EUAAAAAMKnVGXqnELtee-26HyEm-_UE6xG';
-    $response 	= $_POST['g-recaptcha-response'];
+
+    $secret 	= '6LecGIwUAAAAAM76nOf4qNTkZ2fdKFNugmUc7WU9';
+    $response 	= $_POST['token'];
+
+    parse_str($_POST["data"], $_POST);
 
     $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secret."&response=".$response);
     $responseData 	= json_decode($verifyResponse);
@@ -20,7 +23,7 @@ function controllers_contact() {
 
     $mail = fc_email_data(1, $_POST,'nl');
 
-    fc_email_sent("info@themindoffice.nl",$mail[0],$mail[1],$_POST["emailadres"],$_POST["naam"]);
+    fc_email_sent("support@themindoffice.nl",$mail[0],$mail[1],$_POST["emailadres"],$_POST["naam"]);
 
     echo json_encode(array("status" => "success","clear" => "all", "message" => "Bedankt voor uw bericht. Wij nemen zo snel mogelijk contact met u op."));
     exit();
