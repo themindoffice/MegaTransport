@@ -12,14 +12,18 @@
 }
 .content .button,
 .button {
+	button,
 	a {
+		@include appearance(none);
 		background-color: $color-1;
+		border: 0;
 		@include border-radius($button-radius);
 		color: #ffffff;
+		cursor: pointer;
 		display: inline-block;
 		font-family: $font-2;
 		@include responsive(font-size, 14px, .02);
-		font-weight: 800;
+		font-weight: 600;
 		line-height: 120%;
 		overflow: hidden;
 		padding: 14px 50px 14px 18px;
@@ -55,12 +59,14 @@
 	}
 
 	&.alt {
+		button,
 		a {
 			background-color: #fff;
 			color: $color-1;
 		}
 	}
 	&.alt2 {
+		button,
 		a {
 			background-color: #fff;
 			color: #000;
@@ -108,6 +114,15 @@
 }
 
 /* FORMS -------------------------------------- */
+
+.form-title {
+	color: $color-1;
+	font-family: $font-2;
+	@include responsive(font-size, 30px, .15);
+	font-weight: 600;
+	line-height:105%;
+	margin-bottom: $text-margin;
+}
 
 .form {
 	.form-feedback {
@@ -183,12 +198,12 @@
 	input[type=number],
 	input[type=email] {
 		height: 42px;
-		padding: 0 30px;
+		padding: 0 15px;
 	}
 
 	select {
 		height: 42px;
-		padding: 0 60px 0 30px;
+		padding: 0 60px 0 15px;
 
 		& + .icon {
 			border-top: 6px solid #000;
@@ -204,6 +219,6 @@
 
 	textarea {
 		height: 100px;
-		padding: 10px 30px;
+		padding: 10px 15px;
 	}
 }

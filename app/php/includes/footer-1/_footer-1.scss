@@ -18,15 +18,6 @@ footer.footer-1 {
 				}
 			}
 		}
-
-		.form-title {
-			color: $color-1;
-			font-family: $font-2;
-			@include responsive(font-size, 30px, .15);
-			font-weight: 800;
-			line-height:105%;
-			margin-bottom: $text-margin;
-		}
 	}
 
 	.footer-bottom {

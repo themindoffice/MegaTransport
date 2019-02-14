@@ -47,7 +47,7 @@ header.header-1 {
 		color: #000;
 		font-family: $font-2;
 		@include responsive(font-size, 28px);
-		font-weight: 800;
+		font-weight: 600;
 		line-height: 100%;
 	}
 
@@ -86,7 +86,7 @@ header.header-1 {
 				color: #fff;
 				font-family: $font-2;
 				font-size: 15px;
-				font-weight: 700;
+				font-weight: 600;
 				line-height: 100%;
 				margin-top: 8px;
 				position: relative;
@@ -145,7 +145,7 @@ header.header-1 {
 					display: block;
 					font-family: $font-2;
 					font-size: 32px;
-					font-weight: 800;
+					font-weight: 600;
 					line-height: 100%;
 					padding: 12px 20px;
 					text-align: right;

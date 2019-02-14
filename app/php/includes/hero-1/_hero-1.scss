@@ -62,8 +62,8 @@ section.hero-1 {
 		color: #fff;
 		font-family: $font-2;
 		font-style: normal;
-		font-weight: 700;
-		@include responsive(font-size, 60px, .18);
+		font-weight: 600;
+		@include responsive(font-size, 56px, .18);
 		line-height: 120%;
 		margin-bottom: 28px;
 	}

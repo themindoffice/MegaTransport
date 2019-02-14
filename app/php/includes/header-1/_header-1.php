@@ -20,7 +20,6 @@
 							<li class="active"><a href="#">Home</a></li>
 							<li><a href="#">Over ons</a></li>
 							<li><a href="#">Foto's</a></li>
-							<li><a href="#">Diensten</a></li>
 							<li><a href="#">Nieuws</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>

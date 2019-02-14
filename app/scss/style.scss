@@ -46,7 +46,7 @@ main {
 		color: $color-1;
 		font-family: $font-2;
 		@include responsive(font-size, 50px, .15);
-		font-weight: 800;
+		font-weight: 600;
 		line-height:105%;
 		text-transform: uppercase;
 	}
@@ -54,7 +54,7 @@ main {
 		color: $color-2;
 		font-family: $font-2;
 		@include responsive(font-size, 50px, .15);
-		font-weight: 800;
+		font-weight: 600;
 		line-height:105%;
 		text-transform: uppercase;
 	}
@@ -64,7 +64,7 @@ main {
 		display: inline;
 		font-family: $font-2;
 		@include responsive(font-size, 50px, .1);
-		font-weight: 800;
+		font-weight: 600;
 		line-height:105%;
 	}
 	h4 {
@@ -72,7 +72,7 @@ main {
 		display: inline;
 		font-family: $font-2;
 		@include responsive(font-size, 50px, .1);
-		font-weight: 800;
+		font-weight: 600;
 		line-height:105%;
 	}
 
@@ -100,28 +100,28 @@ main {
 		color: $color-1;
 		font-family: $font-2;
 		@include responsive(font-size, 50px, .15);
-		font-weight: 800;
+		font-weight: 600;
 		line-height:105%;
 	}
 	h2 {
 		color: $color-1;
 		font-family: $font-2;
 		@include responsive(font-size, 50px, .15);
-		font-weight: 800;
+		font-weight: 600;
 		line-height:105%;
 	}
 	h3 {
 		color: $color-1;
 		font-family: $font-2;
 		@include responsive(font-size, 40px, .15);
-		font-weight: 800;
+		font-weight: 600;
 		line-height:105%;
 	}
 	h4 {
 		color: $color-1;
 		font-family: $font-2;
 		@include responsive(font-size, 30px);
-		font-weight: 800;
+		font-weight: 600;
 		line-height:105%;
 	}
 	h5 {
@@ -129,7 +129,7 @@ main {
 		color: #000;
 		font-family: $font-2;
 		@include responsive(font-size, 20px);
-		font-weight: 800;
+		font-weight: 600;
 		line-height: 120%;
 		margin-bottom: 14px;
 		padding-bottom: 14px;
@@ -138,7 +138,7 @@ main {
 		color: $color-1;
 		font-family: $font-2;
 		@include responsive(font-size, 18px);
-		font-weight: 800;
+		font-weight: 600;
 		line-height: 150%;
 	}
 
@@ -281,7 +281,7 @@ section.banner-split {
 		.title {
 			color: $color-1;
 			font-family: $font-2;
-			font-weight: 800;
+			font-weight: 600;
 			letter-spacing: 4px;
 			line-height: 105%;
 			margin-bottom: $text-margin;
@@ -329,7 +329,7 @@ section.banner-cta {
 		color: #fff;
 		font-family: $font-2;
 		@include responsive(font-size, 40px, .1);
-		font-weight: 800;
+		font-weight: 600;
 		font-style: italic;
 		line-height:105%;
 		margin-bottom: $text-margin;
@@ -341,7 +341,7 @@ section.contact-info {
 
 	.content {
 		font-family: $font-2;
-		font-weight: 800;
+		font-weight: 600;
 		@include responsive(font-size, 22px);
 		line-height: 140%;
 
@@ -390,13 +390,13 @@ ul.social {
 	background-color: #000;
 	color: #fff;
 	font-family: $font-2;
-	font-weight: 700;
+	font-weight: 600;
 	@include responsive(font-size, 17px, .05);
 	padding: 30px;
 
 	strong {
 		color: $color-1;
-		font-weight: 700;
+		font-weight: 600;
 	}
 	img {
 		margin-bottom: $text-margin;

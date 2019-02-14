@@ -32,7 +32,7 @@
 							<div class="form-row submit">
 								<div class="form-field">
 									<p class="button alt2 ta-xs-right">
-										<a href="#"><span><content name="template.contact-form-button">Send message</content></span></a>
+										<button type="submit"><content name="template.contact-form-button">Send message</content></button>
 									</p>
 								</div>
 							</div>
@@ -46,7 +46,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6 clear-gutter_b-xs reset-gutter_b-md">
-					<strong><content name="template.footer-bottom-text">© Mega Transport  B.V. 2018</content></strong>
+					<content name="template.footer-bottom-text">© Mega Transport  B.V. 2018</content>
 				</div>
 				<div class="col-xs-12 col-md-6 ta-md-right">
 					Creatie & realisatie <a href="https://themindoffice.nl/" target="_blank">The MindOffice</a>

@@ -19,7 +19,7 @@
 							</div>
 							<div class="form-row submit">
 								<div class="form-field">
-									<p class="button alt2 ta-xs-right"><a href="#"><span>{{template.contact-form-button}}</span></a></p>
+									<p class="button alt2 ta-xs-right"> <button type="submit">{{template.contact-form-button}}</button></p>
 								</div>
 							</div>
 						</form>
@@ -31,7 +31,7 @@
 	<section class="footer-bottom">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-6 clear-gutter_b-xs reset-gutter_b-md"><strong>{{template.footer-bottom-text}}</strong></div>
+				<div class="col-xs-12 col-md-6 clear-gutter_b-xs reset-gutter_b-md">{{template.footer-bottom-text}}</div>
 				<div class="col-xs-12 col-md-6 ta-md-right"> Creatie & realisatie <a href="https://themindoffice.nl/" target="_blank">The MindOffice</a></div><a class="back-to-top" href="#" data-scrollto="top"></a></div>
 		</div>
 	</section>
