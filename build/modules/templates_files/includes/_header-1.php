@@ -4,12 +4,7 @@
 			<div class="col-xs-12 clear-gutter_v-xs va-xs-center ha-xs-space-between clear-gutter_r-xs reset-gutter_r-sm">
 				<div class="logo"> <a href="/"><img src="/assets/img/logo.png"></a></div>
 				<div class="extra">
-					<div class="phone hidden-xs visible-md">010 737 05 65</div>
-					<div id="mobile-menu">
-						<a href="#" id="mobile-menu-trigger">
-							<div><span></span><span></span><span></span></div>
-							<p>Menu</p>
-						</a>
+					<div class="phone"> <span class="number hidden-xs visible-md">010 737 05 65</span><a href="tel:0107370565" class="icon-phone visible-xs hidden-md"></span></div><div id="mobile-menu"><a href="#" id="mobile-menu-trigger"><div><span></span><span></span><span></span></div><p>Menu</p></a>
 						<ul>
 							<li class="active"><a href="#">Home</a></li>
 							<li><a href="#">Over ons</a></li>

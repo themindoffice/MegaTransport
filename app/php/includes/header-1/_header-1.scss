@@ -44,11 +44,32 @@ header.header-1 {
 	}
 
 	.phone {
-		color: #000;
-		font-family: $font-2;
-		@include responsive(font-size, 28px);
-		font-weight: 600;
-		line-height: 100%;
+		margin-left: 20px;
+
+		.number {
+			color: #000;
+			font-family: $font-2;
+			@include responsive(font-size, 28px);
+			font-weight: 600;
+			line-height: 100%;
+		}
+
+		[class*=icon-] {
+			color: #000;
+			font-size: 34px;
+			line-height: 34px;
+			height: 34px;
+			width: 34px;
+			text-decoration: none;
+
+			&:before {
+				display: block;
+				font-size: 34px;
+				line-height: 34px;
+				height: 34px;
+				width: 34px;
+			}
+		}
 	}
 
 	#mobile-menu {
