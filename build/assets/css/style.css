@@ -3698,15 +3698,35 @@ ul.social > li > a:before {
 
 header.header-1 {
   background-color: #fff;
-  position: relative;
+  align-content: stretch;
+  -webkit-align-content: stretch;
+  align-items: stretch;
+  -webkit-align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  height: 95px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
   z-index: 100;
 }
 
-header.header-1.sticky {
-  position: absolute;
-  top: 0;
-  left: 0;
+header.header-1 .container {
   width: 100%;
+}
+
+header.header-1 .row {
+  height: 100%;
 }
 
 header.header-1 .logo {
@@ -3902,6 +3922,7 @@ header.header-1 #mobile-menu ul li a {
 }
 
 section.hero-1 {
+  margin-top: 95px;
   overflow: hidden;
   position: relative;
   z-index: 20;
@@ -4030,6 +4051,7 @@ footer.footer-1 .footer-bottom .back-to-top:before {
 }
 
 section.hero-2 {
+  margin-top: 95px;
   overflow: hidden;
   position: relative;
   z-index: 20;
@@ -4498,6 +4520,10 @@ section.hero-2 ul.socialmedia > li > a:before {
   .ta-sm-justify hr {
     margin-left: 0;
     margin-right: auto;
+  }
+
+  header.header-1 .container {
+    width: 480px;
   }
 
   section.hero-2 ul.socialmedia {
@@ -5030,23 +5056,8 @@ section.hero-2 ul.socialmedia > li > a:before {
     margin-right: auto;
   }
 
-  header.header-1.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: all ease 250ms;
-    -webkit-transition: all ease 250ms;
-    width: 100%;
-  }
-
-  header.header-1.sticky.scroll {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  header.header-1.sticky.scroll #searchbar {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  header.header-1 .container {
+    width: 786px;
   }
 
   header.header-1 .logo a:hover {
@@ -5604,6 +5615,10 @@ section.hero-2 ul.socialmedia > li > a:before {
     margin-right: auto;
   }
 
+  header.header-1 .container {
+    width: 992px;
+  }
+
   header.header-1 .phone .number {
     font-size: calc(28px - (28px * (0.1 * 1)));
   }
@@ -6120,6 +6135,10 @@ section.hero-2 ul.socialmedia > li > a:before {
   .ta-xl-justify hr {
     margin-left: 0;
     margin-right: auto;
+  }
+
+  header.header-1 .container {
+    width: 1120px;
   }
 
   header.header-1 .phone .number {

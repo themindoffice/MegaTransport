@@ -1,27 +1,31 @@
 header.header-1 {
 	background-color: #fff;
-	position: relative;
+	@include flex(row, nowrap);
+	height: 95px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
 	z-index: 100;
 
-	&.sticky {
-		@include position(absolute, 0, none, none, 0);
+	.container {
 		width: 100%;
-	}
 
-	@include medium {
-		&.sticky {
-			@include position(fixed, 0, none, none, 0);
-			@include transition;
-			width: 100%;
-
-			&.scroll {
-				@include box-shadow(0 4px 8px 0 rgba(#000, .1));
-
-				#searchbar {
-					@include box-shadow(0 4px 8px 0 rgba(#000, .1));
-				}
-			}
+		@include small {
+			width: $viewport-sm;
 		}
+		@include medium {
+			width: $viewport-md;
+		}
+		@include large {
+			width: $viewport-lg;
+		}
+		@include extralarge {
+			width: $viewport-xl;
+		}
+	}
+	.row {
+		height: 100%;
 	}
 
 	.logo {
